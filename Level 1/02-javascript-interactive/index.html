@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="ARYONIX Interactive Services - JavaScript web development project"
+    >
+
+    <title>ARYONIX | Interactive Services</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">ARYONIX</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="nav-cta" id="navContactBtn">
+                Start a Project
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero -->
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    DIGITAL EXPERIENCES • WEB DEVELOPMENT
+                </p>
+
+                <h1>
+                    We build digital
+                    experiences that
+                    <span>move businesses.</span>
+                </h1>
+
+                <p class="hero-description">
+                    ARYONIX helps businesses turn ideas into modern,
+                    high-performance websites and digital experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-btn" id="heroStartBtn">
+                        Start a Project
+                    </button>
+
+                    <a href="#services" class="secondary-btn">
+                        Explore Services
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="services-section">
+
+            <div class="section-heading">
+                <p class="section-label">WHAT WE DO</p>
+
+                <h2>
+                    Services built for
+                    <span>growth.</span>
+                </h2>
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card">
+
+                    <div class="service-number">01</div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Modern, responsive websites designed to perform
+                        across devices and deliver strong user experiences.
+                    </p>
+
+                    <button
+                        class="learn-more"
+                        data-service="Web Development"
+                    >
+                        Learn More →
+                    </button>
+
+                </article>
+
+                <article class="service-card">
+
+                    <div class="service-number">02</div>
+
+                    <h3>UI/UX Design</h3>
+
+                    <p>
+                        Clean and intuitive interfaces focused on usability,
+                        visual hierarchy and meaningful interactions.
+                    </p>
+
+                    <button
+                        class="learn-more"
+                        data-service="UI/UX Design"
+                    >
+                        Learn More →
+                    </button>
+
+                </article>
+
+                <article class="service-card">
+
+                    <div class="service-number">03</div>
+
+                    <h3>Web Applications</h3>
+
+                    <p>
+                        Interactive web applications built to solve
+                        real-world business and productivity problems.
+                    </p>
+
+                    <button
+                        class="learn-more"
+                        data-service="Web Applications"
+                    >
+                        Learn More →
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Interactive Service Selector -->
+        <section id="process" class="process-section">
+
+            <div class="section-heading">
+                <p class="section-label">PROJECT PLANNER</p>
+
+                <h2>
+                    Tell us what
+                    you're building.
+                </h2>
+
+                <p>
+                    Select a project type to explore the right starting point.
+                </p>
+            </div>
+
+            <div class="selector-card">
+
+                <label for="projectType">
+                    What do you want to build?
+                </label>
+
+                <select id="projectType">
+
+                    <option value="">
+                        Select a project type
+                    </option>
+
+                    <option value="website">
+                        Business Website
+                    </option>
+
+                    <option value="portfolio">
+                        Personal Portfolio
+                    </option>
+
+                    <option value="webapp">
+                        Web Application
+                    </option>
+
+                    <option value="ecommerce">
+                        E-commerce Website
+                    </option>
+
+                </select>
+
+                <div id="projectSuggestion" class="suggestion-box">
+                    Choose a project type to see a recommendation.
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact-section">
+
+            <div class="section-heading">
+                <p class="section-label">LET'S TALK</p>
+
+                <h2>
+                    Have an idea?
+                    <span>Let's build it.</span>
+                </h2>
+
+                <p>
+                    Fill out the form and tell us about your project.
+                </p>
+            </div>
+
+            <form id="projectForm" class="project-form" novalidate>
+
+                <div class="form-group">
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                    >
+
+                    <small class="error-message" id="nameError"></small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                    >
+
+                    <small class="error-message" id="emailError"></small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="project">
+                        Project Type
+                    </label>
+
+                    <select id="project" name="project">
+
+                        <option value="">
+                            Select a project
+                        </option>
+
+                        <option value="Business Website">
+                            Business Website
+                        </option>
+
+                        <option value="Portfolio">
+                            Personal Portfolio
+                        </option>
+
+                        <option value="Web Application">
+                            Web Application
+                        </option>
+
+                        <option value="E-commerce">
+                            E-commerce Website
+                        </option>
+
+                    </select>
+
+                    <small class="error-message" id="projectError"></small>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Tell us about your project
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Briefly describe your idea..."
+                    ></textarea>
+
+                    <small class="error-message" id="messageError"></small>
+
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Send Project Inquiry
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Service Modal -->
+    <div class="modal" id="serviceModal">
+
+        <div class="modal-content">
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close modal"
+            >
+                ×
+            </button>
+
+            <p class="section-label">
+                ARYONIX SERVICE
+            </p>
+
+            <h2 id="modalTitle">
+                Service
+            </h2>
+
+            <p id="modalDescription">
+                Service information will appear here.
+            </p>
+
+            <button
+                class="primary-btn"
+                id="modalProjectBtn"
+            >
+                Start a Project
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+
+        <div class="modal-content success-content">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <p class="section-label">
+                MESSAGE RECEIVED
+            </p>
+
+            <h2>
+                Thanks for reaching out!
+            </h2>
+
+            <p>
+                Your project inquiry has been submitted successfully.
+                This demo uses JavaScript validation and does not send
+                the form to a real backend.
+            </p>
+
+            <button
+                class="primary-btn"
+                id="successClose"
+            >
+                Done
+            </button>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>
+            © 2026 ARYONIX. Design. Develop. Deploy.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
