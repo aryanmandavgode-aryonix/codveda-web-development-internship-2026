@@ -14,12 +14,13 @@ Web Development Intern
 # Selected Tasks
 
 ## Level 1 — Basic
+Status: Not Selected
 
 ### Task 2 — Personal Developer Portfolio
-Status: Not Started
+Status: Completed
 
 ### Task 3 — Introduction to JavaScript
-Status: Not Started
+Status: Completed
 
 ---
 
