@@ -27,10 +27,10 @@ Status: Completed
 ## Level 2 — Intermediate
 
 ### Task 1 — Responsive Web Design with Flexbox and Grid
-Status: Not Started
+Status: Completed
 
 ### Task 3 — Introduction to Front-End Frameworks
-Status: Not Started
+Status: Completed
 
 ---
 
