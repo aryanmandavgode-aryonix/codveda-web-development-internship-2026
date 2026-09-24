@@ -40,7 +40,7 @@ Status: Completed
 Status: Not Started
 
 ### Task 2 — User Authentication System
-Status: Not Started
+Status: Completed
 
 ---
 
