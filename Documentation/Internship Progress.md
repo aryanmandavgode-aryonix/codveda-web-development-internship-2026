@@ -37,7 +37,7 @@ Status: Completed
 ## Level 3 — Advanced
 
 ### Task 1 — Full-Stack CRUD Application
-Status: Not Started
+Status: Completed
 
 ### Task 2 — User Authentication System
 Status: Completed
